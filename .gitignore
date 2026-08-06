@@ -1,2 +1,5 @@
 # ignore environment variables... can't have these exposed...
 .env
+
+# ignore python cache
+__pycache__
