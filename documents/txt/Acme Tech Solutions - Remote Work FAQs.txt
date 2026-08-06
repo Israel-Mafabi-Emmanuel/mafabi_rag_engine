@@ -1,0 +1,53 @@
+Acme Tech Solutions: Remote Work
+FAQs
+This document provides answers to common questions regarding the Acme Tech Solutions
+Remote Work Policy. If you have a question not covered here, please consult the full policy
+document or contact your HR Business Partner.
+Eligibility and Application
+Q: Can anyone at Acme Tech Solutions work remotely?
+A: Not automatically. Eligibility depends on the nature of your role, your performance record,
+and the operational needs of your team. Employees currently on Performance Improvement
+Plans (PIPs) are generally not eligible. All remote work arrangements must be formally
+approved.
+Q: How do I apply to work remotely or switch to a hybrid schedule?
+A: You must submit a formal request through the HR portal (Workday) at least four (4) weeks
+before your desired start date. Your direct manager will then schedule a meeting to discuss it.
+Final approval requires sign-off from both your manager and the Department Head.
+Equipment and Expenses
+Q: Does the company pay for my home internet?
+A: Acme Tech Solutions provides a monthly stipend of $50 to help subsidize the cost of your
+high-speed internet connection.
+Q: What equipment will the company provide for my home office?
+A: The company will provide one (1) standard company-issued laptop and necessary software
+licenses (like VPN and endpoint protection).
+Q: Can I get a monitor or an ergonomic chair for my home office?
+A: Yes, you can request additional equipment (such as a monitor, keyboard, or ergonomic chair)
+up to a maximum value of $500. This request is subject to approval by your manager. Please
+note that all purchased equipment remains the property of Acme Tech Solutions.
+Daily Operations and Hours
+Q: Do I have to work specific hours if I am remote?
+A: Yes. While remote work offers flexibility, Acme Tech Solutions has established "Core Hours"
+from 10:00 AM to 3:00 PM (Local Time). All employees must be online and available for
+meetings and synchronous communication during this window.
+Q: I am an hourly (non-exempt) employee. How do I handle overtime while remote?
+A: You must accurately track all your hours using Kronos. If you need to work overtime, it must
+be pre-approved in writing by your direct manager. Working off-the-clock is strictly prohibited.
+Q: Do I have to keep my camera on during meetings?
+A: While not strictly mandatory for every single interaction, employees are strongly
+encouraged to keep their cameras on during internal and external video conferences to foster
+engagement and team connection.
+Security and Environment
+Q: Can I work from a local coffee shop?
+A: Yes, but you must prioritize data security. You are strictly prohibited from using unsecured
+public Wi-Fi to access sensitive company data. If you work in a public space, you must use a
+secure mobile hotspot or the company VPN. You must also ensure your screen is not visible to
+unauthorized individuals.
+Q: What should I do if I suspect my company laptop was compromised while traveling?
+A: You must report any suspected security breach, data loss, or unauthorized access to the
+Information Security Officer (Infosec@acmetech.com) immediately, within 1 hour of discovery.
+Performance
+Q: What happens if I struggle to hit my goals while working remotely?
+A: Performance expectations remain the same whether you are in the office or remote. If your
+remote setup negatively impacts your performance or team dynamics, the company reserves
+the right to modify or terminate your remote work agreement. You would be given a minimum
+of two (2) weeks' notice to return to the office.

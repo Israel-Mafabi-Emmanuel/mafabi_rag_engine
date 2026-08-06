@@ -1,0 +1,135 @@
+Acme Tech Solutions: Remote Work
+Policy
+Effective Date: January 1, 2026
+Last Updated: July 1, 2026
+Policy Owner: Human Resources Department (HR@acmetech.com)
+Applies To: All full-time and part-time employees of Acme Tech Solutions ("the Company").
+Contractors and temporary staff are excluded unless explicitly stated in their contracts.
+1. Purpose and Scope
+Acme Tech Solutions recognizes the value of flexible work arrangements in promoting work-life
+balance, increasing productivity, and reducing our environmental footprint. This policy outlines
+the guidelines, expectations, and procedures for remote work (telecommuting) to ensure
+consistent and fair application across the organization while maintaining operational efficiency
+and data security.
+This policy supersedes all previous remote work agreements and guidelines. It is designed to be
+a living document, subject to review and modification based on business needs and employee
+feedback.
+2. Definitions
+● Remote Work: Working from a location other than the primary Acme Tech Solutions office
+(e.g., home office, co-working space) for a portion or all of an employee's scheduled work
+hours.
+● Hybrid Work: A schedule that combines working from the Company office and working
+remotely.
+● Fully Remote: Working exclusively from a remote location, rarely or never required to be
+physically present at the Company office.
+● Core Hours: The designated hours during which all employees, regardless of location, are
+expected to be online and available for meetings and collaboration.
+3. Eligibility and Approval
+Not all roles at Acme Tech Solutions are suitable for remote work. Eligibility is determined by
+the nature of the job responsibilities, the employee's performance record, and team
+requirements.
+3.1 Assessing Suitability
+Managers will evaluate remote work requests based on the following criteria:
+● Nature of Work: Can the duties be performed effectively off-site? Does the role require
+constant physical presence or access to specialized on-site equipment?
+● Performance: Does the employee have a track record of meeting performance
+expectations, working independently, and managing time effectively? Employees on
+Performance Improvement Plans (PIPs) are generally not eligible for remote work.
+● Communication: Does the employee demonstrate strong written and verbal
+communication skills necessary for remote collaboration?
+● Operational Needs: Will the remote arrangement negatively impact team coverage, client
+service, or overall business operations?
+3.2 Request Process
+1. Employees interested in a remote or hybrid work arrangement must submit a formal
+request via the HR portal (Workday) at least four (4) weeks in advance of the desired start
+date.
+2. The direct manager will review the request and schedule a meeting to discuss the
+proposed arrangement, including specific days, hours, and communication expectations.
+3. Final approval requires sign-off from both the direct manager and the Department Head.
+4. Approved arrangements will be documented in a Remote Work Agreement, signed by the
+employee and manager.
+4. Work Environment and Equipment
+Employees working remotely are responsible for maintaining a safe, ergonomic, and
+distraction-free work environment.
+4.1 Home Office Setup
+● Dedicated Space: Employees should designate a specific area for work that minimizes
+interruptions and maintains a professional appearance during video calls.
+● Internet Connectivity: A reliable, high-speed internet connection is mandatory. The
+Company will provide a monthly stipend of $50 to subsidize internet costs.
+● Health and Safety: Employees are expected to ensure their remote workspace complies
+with basic health and safety standards. The Company is not liable for injuries occurring in
+the remote workspace unless directly related to the performance of job duties.
+4.2 Company-Provided Equipment
+Acme Tech Solutions will provide the necessary equipment for employees to perform their
+duties remotely. This typically includes:
+● One (1) company-issued laptop.
+● Standard software licenses and security tools (VPN, endpoint protection).
+Employees may request additional equipment (e.g., monitor, keyboard, ergonomic chair) up to
+a maximum value of $500, subject to manager approval. All company-provided equipment
+remains the property of Acme Tech Solutions and must be returned upon termination of
+employment or the remote work agreement.
+4.3 Use and Maintenance
+Employees must use company-provided equipment solely for business purposes and adhere to
+the Acceptable Use of Technology Policy. Any loss, damage, or theft of company equipment
+must be reported immediately to the IT Helpdesk (ITHelp@acmetech.com).
+5. Security and Confidentiality
+Maintaining data security is paramount in a remote work environment. Employees must strictly
+adhere to the Company's Data Security and Privacy Policies.
+5.1 Protecting Company Information
+● VPN Requirement: All remote access to the Company network and internal systems must
+be conducted through the approved Virtual Private Network (VPN).
+● Device Security: Company laptops must be locked when unattended. Employees must
+not allow unauthorized individuals (including family members) to use company devices.
+● Physical Security: Printed documents containing sensitive or confidential information
+must be stored securely and shredded when no longer needed.
+● Public Wi-Fi: Working from public locations (e.g., cafes) using unsecured Wi-Fi networks
+is strictly prohibited when accessing sensitive company data. If necessary, employees
+must use a secure mobile hotspot or the company VPN.
+5.2 Incident Reporting
+Any suspected security breach, data loss, or unauthorized access must be reported
+immediately to the Information Security Officer (Infosec@acmetech.com) within 1 hour of
+discovery.
+6. Communication and Availability
+Effective communication is critical for remote teams. Employees must remain accessible and
+responsive during their scheduled work hours.
+6.1 Core Hours
+Acme Tech Solutions operates with Core Hours from 10:00 AM to 3:00 PM (Local Time). All
+employees, regardless of their specific work schedule or location, must be online and available
+for synchronous communication and meetings during this time.
+6.2 Communication Protocols
+● Calendar Management: Employees must keep their calendars up-to-date, reflecting their
+working hours, breaks, and out-of-office status.
+● Responsiveness: Employees are expected to respond to urgent communications (direct
+messages, urgent emails) within 1 hour during their scheduled working hours. Non-urgent
+communications should be addressed within 24 hours.
+● Video Conferencing: For internal and external meetings, employees are encouraged to
+keep their cameras on to foster engagement and connection.
+● Status Updates: Regular communication with managers regarding project progress and
+any roadblocks is essential. The frequency and format of these updates will be determined
+by individual teams.
+7. Performance and Evaluation
+Remote work does not change the expectations for employee performance.
+● Performance will be evaluated based on the achievement of goals, quality of work, and
+adherence to company values, rather than physical presence.
+● Managers will conduct regular check-ins and formal performance reviews as outlined in
+the Performance Management Policy.
+● If a remote work arrangement negatively impacts an employee's performance or team
+dynamics, the Company reserves the right to modify or terminate the agreement with a
+minimum of two (2) weeks' notice, requiring the employee to return to the office.
+8. Time Tracking and Overtime
+● Non-Exempt Employees: Hourly employees must accurately track and report all hours
+worked using the company's designated timekeeping system (Kronos). Any overtime must
+be pre-approved in writing by the direct manager. Working off-the-clock is strictly
+prohibited.
+● Exempt Employees: Salaried employees are expected to manage their time to fulfill their
+responsibilities, generally working a standard 40-hour week. While formal time tracking is
+not required, consistent availability during Core Hours is mandatory.
+9. Policy Review and Compliance
+This policy will be reviewed annually by the HR Department. Failure to comply with this policy
+may result in disciplinary action, up to and including termination of the remote work agreement
+or employment. Employees with questions regarding this policy should contact their HR
+Business Partner.
+Acknowledgment:
+By submitting a remote work request or participating in a remote work arrangement,
+employees acknowledge they have read, understood, and agree to abide by the terms of this
+policy.
