@@ -11,7 +11,10 @@ dependencies:
   - seaborn
   - pip
   - pip:
+    - fastapi
+    - uvicorn[standard]
     - google-genai
     - python-dotenv
     - halo
     - pdfplumber
+    - python-multipart

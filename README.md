@@ -1,52 +1,91 @@
 # Mafabi ML Engine & FrontDesk Assistant
-A modular Retrieval-Augmented Generation (RAG) pipeline and API designed to ingest PDFs, embed their content, and provide intelligent conversational answers based on the text.
+A modular Retrieval-Augmented Generation (RAG) pipeline and REST API designed to ingest enterprise PDFs, compute vector embeddings, and deliver grounded conversational answers.
 
 ## The "Why"
-Have you ever wanted a virtual assistant that can instantly recall and synthesize information from a large collection of your own documents? This project serves as an inspirational recipe for building your own knowledge-based AI. It solves the problem of searching through endless PDFs by extracting the text, chunking it into digestible pieces, mapping those chunks into vector embeddings using Google GenAI, and exposing an easy-to-use FastAPI backend for asking questions against your private data. Whether you're building a "FrontDesk" virtual receptionist or just experimenting with RAG pipelines, this is the perfect launchpad. 
+Traditional keyword search fails when querying dense corporate handbooks, policies, and documentation. This project solves that challenge by providing an end-to-end RAG architecture with custom semantic chunking, dual-task Gemini vector embeddings, and calibrated cosine similarity thresholding to eliminate hallucinations. With both an interactive FastAPI web interface and an instant CLI mode, it serves as a lightweight, production-ready foundation for domain-specific AI front-desk assistants.
 
 ## Tech Stack
 - **Python 3.8+**
-- **FastAPI** (for the REST API)
-- **Google GenAI** (for vector embeddings and answer generation)
-- **PDFPlumber** (for precise text extraction)
-- **Scikit-learn, Numpy, Pandas** (data and math ops)
+- **FastAPI & Uvicorn** (Asynchronous REST API and web application server)
+- **Google GenAI SDK** (`gemini-embedding-001` for task-tuned embeddings and `gemini-3.5-flash` for conversational generation)
+- **PDFPlumber** (High-fidelity PDF text extraction)
+- **NumPy, Pandas, Scikit-learn** (Vector mathematics and similarity scoring)
+- **HTML5 & Vanilla JavaScript** (Interactive web frontend dashboard)
 
 ## Architecture / File Purposes
-- **`main.py`**: The core embedding pipeline script. It orchestrates the process from reading PDFs to saving vectors.
-- **`api.py`**: A FastAPI application that provides routes to upload new PDFs (`/api/upload`) and query the knowledge base (`/api/ask`).
-- **`engine/`**: The brain of the project, containing modular scripts for extraction (`pdf_extractor.py`), chunking (`chunker.py`), embedding (`embedder.py`), vector storage (`vector_store.py`), and answer generation (`generator.py`).
-- **`documents/pdf/`**: Drop your raw PDF files in this folder for ingestion.
-- **`storage/`**: Contains the generated `embeddings.json` file which acts as our local vector database.
+- **`main.py`**: Batch embedding pipeline that extracts text from PDFs, applies semantic chunking, computes embeddings, and persists vectors to storage.
+- **`ask.py`**: Interactive CLI testing tool to query the vector store in real-time, inspect similarity scores, and test LLM generation in terminal.
+- **`api.py`**: FastAPI application exposing `/api/upload` (dynamic document ingestion) and `/api/ask` (semantic search and generation), alongside serving the web UI.
+- **`engine/`**: Decoupled core engine components:
+  - `pdf_extractor.py`: Extracts and normalizes text from documents.
+  - `chunker.py`: Smart heuristic chunking for prose and FAQ formats with short-chunk merging.
+  - `embedder.py`: Handles Google GenAI vector generation with dedicated query and document task types.
+  - `vector_store.py`: Persistence layer for vector records.
+  - `search.py`: Cosine similarity retrieval with calibrated relevance thresholding (`MIN_RELEVANCE_SCORE`).
+  - `generator.py`: Grounded context injection and adaptive persona prompting.
+  - `config.py`: Centralized configuration for models, thresholds, and paths.
+- **`templates/index.html`**: Clean browser dashboard for uploading PDFs and chatting with the knowledge base.
+- **`documents/pdf/`**: Source repository directory for raw input PDF documents.
+- **`storage/`**: Local persistence directory housing `embeddings.json`.
 
 ## Execution
-Follow these recipe steps to get your own FrontDesk Assistant running:
 
-1. **Clone & Set Up Environment**
-   Create a conda environment from the provided file or use `pip`:
-   ```bash
-   conda env create -f environment.yml
-   conda activate mafabi_ml_engine
-   # Or install dependencies manually:
-   pip install fastapi uvicorn pdfplumber google-genai python-dotenv
-   ```
+### 1. Environment Setup (Windows)
 
-2. **Configure API Keys**
-   Create a `.env` file in the root directory and add your Google GenAI API key:
-   ```bash
-   GOOGLE_API_KEY=your_google_api_key_here
-   ```
+Clone the repository and navigate into the project directory:
+```powershell
+git clone https://github.com/Israel-Mafabi-Emmanuel/mafabi_ml_engine.git
+cd mafabi_ml_engine
+```
 
-3. **Ingest Documents**
-   Place any PDF files you want to query inside the `documents/pdf/` directory. Then, build the embeddings:
-   ```bash
-   python main.py
-   ```
+Create and activate a virtual environment:
 
-4. **Start the API Server**
-   Spin up the FastAPI backend to interact with your data:
-   ```bash
-   uvicorn api:app --reload
-   ```
+**Using Python `venv` (Standard):**
+```powershell
+python -m venv .venv
+.\.venv\Scripts\Activate.ps1
+# If PowerShell script execution is restricted, run:
+# Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
+```
+
+**Or using Conda:**
+```powershell
+conda env create -f environment.yml
+conda activate mafabi_ml_engine
+```
+
+Install required dependencies:
+```powershell
+pip install -r requirements.txt
+# Or manually:
+pip install fastapi "uvicorn[standard]" python-multipart pdfplumber google-genai python-dotenv halo
+```
+
+### 2. Configure Environment Variables
+Create a `.env` file in the root directory and add your Google Gemini API key:
+```env
+GOOGLE_API_KEY=your_gemini_api_key_here
+```
+
+### 3. Ingest Documents
+Place your target PDF files into `documents/pdf/`, then generate vector embeddings:
+```powershell
+python main.py
+```
+
+### 4. Query via Terminal (CLI)
+Test retrieval and conversational responses directly in PowerShell or CMD:
+```powershell
+python ask.py
+```
+
+### 5. Launch the Web Application
+Start the FastAPI server (using `python -m uvicorn` guarantees Windows uses the active environment's binary):
+```powershell
+python -m uvicorn api:app --reload --host 127.0.0.1 --port 8000
+```
+- **Web UI**: Open your browser at [http://localhost:8000](http://localhost:8000) to chat with the assistant and upload new PDFs.
+- **API Documentation**: Interactive Swagger docs available at [http://localhost:8000/docs](http://localhost:8000/docs).
 
 ---
 **Glory to GOD**
