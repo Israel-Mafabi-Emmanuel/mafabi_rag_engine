@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "E:/Mafabi/customTM"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "mafabi_ml_engine"
+	}
+}

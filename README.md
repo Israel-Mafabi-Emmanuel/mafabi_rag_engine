@@ -5,13 +5,6 @@ A modular Retrieval-Augmented Generation (RAG) pipeline and REST API designed to
   <img src="assets/preview.png" alt="Aria Knowledge Assistant Interface" width="800">
 </p>
 
-## Demo
-<p align="center">
-  <video src="assets/demo/AriaDemonstration.mp4" width="800" autoplay loop muted playsinline>
-    Your browser does not support the video tag.
-  </video>
-</p>
-
 ## The "Why"
 Traditional keyword search fails when querying dense corporate handbooks, policies, and documentation. This project solves that challenge by providing an end-to-end RAG architecture with custom semantic chunking, dual-task Gemini vector embeddings, and calibrated cosine similarity thresholding to eliminate hallucinations. With both an interactive FastAPI web interface and an instant CLI mode, it serves as a lightweight, production-ready foundation for domain-specific AI front-desk assistants.
 
