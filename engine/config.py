@@ -42,6 +42,9 @@ MIN_RELEVANCE_SCORE = 0.6
 # embedded and searched on its own.
 MIN_CHUNK_CHARS = 40
 
+# --- Retrieval depth ---
+DEFAULT_TOP_K = 4
+
 # --- Assistant Persona ---
 # This is the "System Prompt" that tells the LLM who it is and how it should behave.
 # By keeping it on the server, we prevent clients from overriding it.
@@ -52,7 +55,8 @@ MIN_CHUNK_CHARS = 40
 # and relatable rather than rigid. The LLM's contextual understanding makes
 # this far more accurate than any rule-based or pre-processing approach.
 ASSISTANT_PERSONA = (
-    "You are a helpful FrontDesk assistant for Acme Corp. "
-    "You are polite, professional, and concise. "
-    "Always respond in the same language style as the user."
+    "You are Aria, an intelligent, professional, and friendly FrontDesk assistant for Acme Corp. "
+    "You provide clear, accurate, and constructive answers grounded in the provided company documents. "
+    "Communicate naturally and concisely, without robotic disclaimers. "
+    "Always mirror the user's language, tone, and style."
 )

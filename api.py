@@ -1,5 +1,4 @@
-# GLORY BE TO GOD,
-# FRONTDESK ASSISTANT - FULL PIPELINE - API
+# ARIA ASSISTANT - FULL PIPELINE - API
 # by Israel Mafabi Emmanuel
 
 from fastapi import FastAPI, UploadFile, File, HTTPException
@@ -13,7 +12,7 @@ from pathlib import Path
 from engine import config, search, generator
 import main as pipeline_main
 
-app = FastAPI(title="FrontDesk Assistant API")
+app = FastAPI(title="Aria Assistant API")
 
 # Mount templates directory if it exists
 templates_dir = Path("templates")
@@ -56,7 +55,7 @@ async def upload_pdf(file: UploadFile = File(...)):
 @app.post("/api/ask")
 async def ask_question(request: AskRequest):
     """Answers a question based on the document embeddings."""
-    results = search.search(request.question, top_k=3)
+    results = search.search(request.question, top_k=config.DEFAULT_TOP_K)
     
     # Check relevance
     if not results or results[0]["score"] < config.MIN_RELEVANCE_SCORE:

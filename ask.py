@@ -8,23 +8,23 @@ from engine import config, search, generator
 
 
 def main():
-    question = input("Ask a question about the Acme policy: ")
-    results = search.search(question, top_k=3)
+    question = input("Ask Aria a question: ")
+    results = search.search(question, top_k=config.DEFAULT_TOP_K)
 
     if not results or results[0]["score"] < config.MIN_RELEVANCE_SCORE:
-        print("\nI don't have information about that in the Acme policy documents.")
+        print("\nAria: I don't have information about that in the current documents.")
         return
 
     for rank, result in enumerate(results, start=1):
         print(f"\n#{rank}  score={result['score']:.4f}  source={result['source_file']}")
         
-    print("\nGenerating answer...")
+    print("\nAria is generating answer...")
     chunks = [r["chunk_text"] for r in results]
     answer = generator.generate_answer(question, chunks)
     
-    print("\n--- Answer ---")
+    print("\n--- Aria's Answer ---")
     print(answer)
-    print("--------------")
+    print("----------------------")
 
 
 if __name__ == "__main__":

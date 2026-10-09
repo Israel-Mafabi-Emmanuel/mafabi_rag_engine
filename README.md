@@ -1,5 +1,5 @@
-# Mafabi ML Engine & FrontDesk Assistant
-A modular Retrieval-Augmented Generation (RAG) pipeline and REST API designed to ingest enterprise PDFs, compute vector embeddings, and deliver grounded conversational answers.
+# Mafabi ML Engine & Aria Assistant
+A modular Retrieval-Augmented Generation (RAG) pipeline and REST API designed to ingest enterprise PDFs, compute vector embeddings, and deliver grounded conversational answers through Aria, an adaptive AI knowledge assistant.
 
 ## The "Why"
 Traditional keyword search fails when querying dense corporate handbooks, policies, and documentation. This project solves that challenge by providing an end-to-end RAG architecture with custom semantic chunking, dual-task Gemini vector embeddings, and calibrated cosine similarity thresholding to eliminate hallucinations. With both an interactive FastAPI web interface and an instant CLI mode, it serves as a lightweight, production-ready foundation for domain-specific AI front-desk assistants.

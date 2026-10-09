@@ -23,16 +23,22 @@ def generate_answer(question: str, chunks: list[str]) -> str:
     # Build the prompt
     context_text = "\n\n---\n\n".join(chunks)
     
-    prompt = f"""{config.ASSISTANT_PERSONA} Use the following document context to answer the user's question. 
-    If the answer is not clearly present in the context, politely state that you do not have that information.
-    Do not hallucinate or use outside knowledge.
+    prompt = f"""{config.ASSISTANT_PERSONA}
 
-    Context:
-    {context_text}
+Context from documents:
+{context_text}
 
-    User Question:
-    {question}
-    """
+User Question:
+{question}
+
+Response Guidelines:
+1. Answer the question directly, warmly, and constructively based on the context above.
+2. If the user asks about a policy or topic (such as work hours, equipment, or communication) that is discussed in the context, explain the relevant requirements, guidelines, and arrangements clearly.
+3. If a specific metric or figure is not defined in the text, highlight what IS defined (e.g., Core Hours, manager-coordinated schedules) rather than starting with an apologetic disclaimer.
+4. Only state that you don't have the information if the topic is genuinely absent from the context.
+5. Use clean formatting (bullet points, bold highlights for hours, deadlines, or tools) for scannability.
+6. Keep answers grounded strictly in the provided context—never hallucinate outside facts.
+"""
 
     response = _client.models.generate_content(
         model=GENERATION_MODEL,
