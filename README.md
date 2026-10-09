@@ -1,5 +1,9 @@
-# Mafabi ML Engine & Aria Assistant
+# Mafabi RAG Engine & Aria Assistant
 A modular Retrieval-Augmented Generation (RAG) pipeline and REST API designed to ingest enterprise PDFs, compute vector embeddings, and deliver grounded conversational answers through Aria, an adaptive AI knowledge assistant.
+
+<p align="center">
+  <img src="assets/preview.png" alt="Aria Knowledge Assistant Interface" width="800">
+</p>
 
 ## The "Why"
 Traditional keyword search fails when querying dense corporate handbooks, policies, and documentation. This project solves that challenge by providing an end-to-end RAG architecture with custom semantic chunking, dual-task Gemini vector embeddings, and calibrated cosine similarity thresholding to eliminate hallucinations. With both an interactive FastAPI web interface and an instant CLI mode, it serves as a lightweight, production-ready foundation for domain-specific AI front-desk assistants.
@@ -22,11 +26,12 @@ Traditional keyword search fails when querying dense corporate handbooks, polici
   - `embedder.py`: Handles Google GenAI vector generation with dedicated query and document task types.
   - `vector_store.py`: Persistence layer for vector records.
   - `search.py`: Cosine similarity retrieval with calibrated relevance thresholding (`MIN_RELEVANCE_SCORE`).
-  - `generator.py`: Grounded context injection and adaptive persona prompting.
+  - `generator.py`: Grounded context injection, adaptive persona prompting, and constructive response synthesis.
   - `config.py`: Centralized configuration for models, thresholds, and paths.
-- **`templates/index.html`**: Clean browser dashboard for uploading PDFs and chatting with the knowledge base.
+- **`templates/index.html`**: Clean browser dashboard for uploading PDFs and chatting with Aria.
 - **`documents/pdf/`**: Source repository directory for raw input PDF documents.
 - **`storage/`**: Local persistence directory housing `embeddings.json`.
+- **`assets/`**: Visual artifacts including UI preview demonstrations.
 
 ## Execution
 
@@ -34,8 +39,8 @@ Traditional keyword search fails when querying dense corporate handbooks, polici
 
 Clone the repository and navigate into the project directory:
 ```powershell
-git clone https://github.com/Israel-Mafabi-Emmanuel/mafabi_ml_engine.git
-cd mafabi_ml_engine
+git clone https://github.com/Israel-Mafabi-Emmanuel/mafabi_rag_engine.git
+cd mafabi_rag_engine
 ```
 
 Create and activate a virtual environment:
@@ -51,7 +56,7 @@ python -m venv .venv
 **Or using Conda:**
 ```powershell
 conda env create -f environment.yml
-conda activate mafabi_ml_engine
+conda activate mafabi_rag_engine
 ```
 
 Install required dependencies:
@@ -84,7 +89,7 @@ Start the FastAPI server (using `python -m uvicorn` guarantees Windows uses the 
 ```powershell
 python -m uvicorn api:app --reload --host 127.0.0.1 --port 8000
 ```
-- **Web UI**: Open your browser at [http://localhost:8000](http://localhost:8000) to chat with the assistant and upload new PDFs.
+- **Web UI**: Open your browser at [http://localhost:8000](http://localhost:8000) to chat with Aria and upload new PDFs.
 - **API Documentation**: Interactive Swagger docs available at [http://localhost:8000/docs](http://localhost:8000/docs).
 
 ---

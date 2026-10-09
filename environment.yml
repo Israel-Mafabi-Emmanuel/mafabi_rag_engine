@@ -1,4 +1,4 @@
-name: mafabi_ml_engine
+name: mafabi_rag_engine
 channels:
   - defaults
   - conda-forge
